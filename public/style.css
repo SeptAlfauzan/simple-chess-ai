@@ -1,0 +1,20 @@
+html {
+  height: 100%;
+}
+
+#board {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.title {
+  text-align: center;
+  font-size: 48px;
+}
+
+.body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url("https://anima-uploads.s3.amazonaws.com/projects/627a06da1488aa85db0fd544/releases/627a06e6d04b0fb180b1469d/img/yagnik-sankhedawala-9trha5ptc-c-unsplash-1@1x.png");
+}

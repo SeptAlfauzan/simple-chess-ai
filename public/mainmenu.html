@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+  </style>
+  <title>Unbeatabel Chess</title>
+</head>
+
+<body>
+  <div class="desktop-1">
+    <div class="overlap-group">
+      <div class="overlap-group1">
+        <div class="title-container">
+          <img class="" src="mdi-chess-rook.svg" />
+          <div class="unbeatablelexendmega-semi-bold-white-36px">UNBEATABLE</div>
+        </div>
+        <h1 class="title">CHESS</h1>
+        <img class="line-1" src="./line-1.svg" /><img class="line-2" src="./line-2.svg" />
+      </div>
+      <div class="frame-7">
+        <div class="frame">
+          <div class="frame-1border-4px-dandelion">
+            <div class="placelexendmega-semi-bold-white-36px">START</div>
+          </div>
+        </div>
+
+        <!-- <div style="width: 395px; border: 1px solid red; position: relative; overflow: hidden;"> -->
+        <div class="frame select" style="height: 80px;">
+          <select id="level" name="cars" id="cars" class="frame" style="font-size: 30px">
+            <option value="1" style="color: wheat">
+              Easy
+            </option>
+            <option value="2">
+              Medium
+            </option>
+            <option value="3">
+              Hard
+            </option>
+          </select>
+        </div>
+
+        <!-- </div> -->
+        <div class="frame">
+          <div class="frame-1border-4px-dandelion">
+            <div class="aboutlexendmega-semi-bold-white-36px">ABOUT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  //set default value for depth
+  localStorage.setItem('level', 1);
+  //depth value based on select level change
+  const level = document.querySelector('#level')
+  level.addEventListener('change', (e) => {
+    localStorage.setItem('level', e.target.value)
+  })
+</script>
+
+</html>

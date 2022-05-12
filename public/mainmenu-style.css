@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Mega:600|Monoton:400");
+body {
+  background: black;
+}
+* {
+  font-family: "Righteous", cursive;
+  font-size: 30px;
+  color: wheat;
+}
+.title-container {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
+}
+.desktop-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 95vh;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: black;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.overlap-group {
+  align-items: flex-end;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/627a06da1488aa85db0fd544/releases/627a06e6d04b0fb180b1469d/img/yagnik-sankhedawala-9trha5ptc-c-unsplash-1@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+  height: 90vh;
+  padding: 10px 411.5px;
+  width: 100vw;
+  justify-items: center;
+  align-items: center;
+}
+
+.frame-7 {
+  /* align-self: center; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 50px;
+  justify-content: center;
+  margin-top: 85px;
+}
+
+.frame {
+  align-items: center;
+  background-color: var(--metallic-bronze);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  height: 91px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 7px;
+  width: 395px;
+}
+
+.frame-1 {
+  align-items: center;
+  background-color: var(--mikado);
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  min-height: 77px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 16px;
+  width: 381px;
+}
+
+.help {
+  letter-spacing: 0;
+}
+
+.frame-6 {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  min-height: 91px;
+  min-width: 575px;
+}
+
+.carbonnext-filled {
+  height: 70px;
+  width: 70px;
+}
+
+.medium {
+  letter-spacing: 0;
+}
+
+.place {
+  letter-spacing: 0;
+}
+
+.about {
+  letter-spacing: 0;
+}
+
+.overlap-group1 {
+  align-self: center;
+  height: 225px;
+  margin-left: 41px;
+  position: relative;
+  width: 458px;
+}
+
+.mdichess-rook {
+  height: 56px;
+  left: 200px;
+  position: absolute;
+  top: 0;
+  width: 56px;
+}
+
+.line-2 {
+  height: 12px;
+  left: 0;
+  position: absolute;
+  top: 180px;
+  width: 458px;
+}
+
+.title {
+  color: #a78e3e;
+  font-family: var(--font-family-monoton);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  left: 3px;
+  letter-spacing: 16px;
+  position: absolute;
+  margin-bottom: 200px;
+  top: -10px;
+}
+
+.unbeatable {
+  left: 72px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 47px;
+}
+
+.line-1 {
+  height: 12px;
+  left: 99px;
+  position: absolute;
+  top: 40px;
+  width: 258px;
+}
+
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --mikado: rgba(44, 35, 7, 1);
+  --metallic-bronze: rgba(72, 61, 26, 1);
+  --dandelion: rgba(255, 215, 98, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  --font-size-m: 36px;
+  --font-size-l: 100px;
+
+  --font-family-lexend_mega: "Lexend Mega";
+  --font-family-monoton: "Monoton";
+}
+
+.border-4px-dandelion {
+  border-width: 4px;
+  border-style: solid;
+  border-color: var(--dandelion);
+}
+.lexendmega-semi-bold-white-36px {
+  color: var(--white);
+  font-family: var(--font-family-lexend_mega);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* custom select */
+
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  text-align: center;
+  left: 50px;
+  width: 100px;
+  text-indent: 140px;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  height: 3em;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #313131;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: rgb(255, 198, 92);
+}
